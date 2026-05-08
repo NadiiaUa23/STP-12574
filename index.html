@@ -1,63 +1,143 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/evpl_vite_template/icon_game.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Modak&family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Bee Brilliant Blast</title>
-    <script type="module" crossorigin src="/evpl_vite_template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-CTlseuqe.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/evpl_vite_template/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/evpl_vite_template/icon_game.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Modak&family=Poppins:wght@600&display=swap"
+    rel="stylesheet" />
+  <title>Bee Brilliant Blast</title>
+  <script type="module" crossorigin src="/evpl_vite_template/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BGtjG2fa.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__container">
+    <div class="header__wrapper">
+      <a class="nav-logo" href="./index.html" aria-label="Bee Brilliant Blast home">
+        Bee Brilliant Blast
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
+
       <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
+        <button class="burger-btn" type="button" data-menu-open aria-label="Open menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="burger-btn__icon" width="47" height="47" aria-hidden="true">
+            <use href="/evpl_vite_template/assets/icons-R7fC5tFG.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <nav class="burger-menu" id="mobile-menu" data-visible="false" aria-label="Mobile navigation">
+          <ul class="burger-menu__list">
+            <li><a class="burger-menu__link" href="#about">About</a></li>
+            <li><a class="burger-menu__link" href="#gallery">Gallery</a></li>
+            <li><a class="burger-menu__link" href="#reviews">Reviews</a></li>
+            <li><a class="burger-menu__link" href="#faq">FAQ</a></li>
+            <li><a class="burger-menu__link" href="#contact">Contact</a></li>
           </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-wrapper">
+      <h1 class="hero-title">
+        Pop, blast, and enjoy the buzz
+        <span class="highlight">Tap, Blast, and Clear The Board</span>
+        Simple moves, brilliant results
+      </h1>
+
+      <a
+        class="hero-btn"
+        href="https://play.google.com/store/apps/details?id=dk.tactile.beebrilliantblast&hl=en&gl=us"
+        aria-label="Play on Google Play"
+        ><img
+          class="btn-logo"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABAFJREFUeAHNmT9sE0kUxj9buXC66ISlE2lZN1fcXQ5TnERxgIOEKBAQChBUcUpEAQ0NBVlKaPgjkChAMYIWkYIW7AAFnQ1CAkSRDUIC8ScJkDgOhDze8+yaje2s17uzG/+k57Ud7+b75r2Z3ZlJQANElOLDEEeGY6N9TNnhYNnxmKPMUUwkEhbWChHNMcpRoOCUOHIcBuLCJXyG9DIWuZGIhDcyCt1Iy5BKd1xMkq5s8IWGKfpWb4X8zyGEgVTJrDXBSoq6Q7xDZyb4hCHqPoZbaU20EG/woYSVN6EmJharmE2+wr5f/kRMzHJsbnvzIzUCeFJcIILF8XaCjM+XqPhtimKi1Kg32SBeas1AGyaX7DfVbbAqA8jO38TIwh1Yy58QMRnWaLq/qJcQqdKZhA/yc8DIR9cXv97neFh7m+v9F6PrtsJIrkdESCmluZTkuCIDJoLCmUD1/9rb/Ncn2Dx3DacXHyAipG8edz7UMtBJ6wtNGXBwZUKQLJicjWHOimbqWXAykIUOXJkQpE/kuG+kv1zGdc6MRupZcAwcgy4aTAiOkf2VWzo7+nZ5Sdrlk4FOWpgQxr+9qGVD04iVZe0pyUAWUbCKCUE6uhiRjh7SyJAY0Nv6bjxMCGb1AQb5HlJcvI+AZMTAJkRJGxOppefIfNgFvE0DlevoEEMMpBE1q5jILL9BoXIVKaoCSxYwnQPeDwLfLfhkkxjYiDhoMLFCvJvFIvCG23RmxI+RVBJxIia+DsBYnsHtys1m8W7m88rI3AWvK8ZsgDFeb0HhUQEGzfo7YWHc889iwOeVwmNMv0fhognjCrfsIx+V+zvfbP+47fmTHg4ZiD0nLzqoi59+p7648Z86bplq/vG6LLD+HNDbdoS3JANlREyTeAcx4c6ECN9QUNHr6/Y0JRmwECGrincQEz0GsJNHnb5hdEhZDESWgbbi+34D9uxm8Rx9fQhAzYB08zFopq14EX74QFDhDsUemRTIPB0aH+o8xf/zFz+8HwX6+xGSsqxQ9NgfJqDJwKriRfihg8DA39BE7Q7nGDgPNakJNZy2FN+/QZXKjkFopigvNQN2GYmjwEvbTeKdDrp3d9g6b0XeWeByL6tI68vEvm0WGif1qYUKSmdO/BSvp4N6kXYMOCUUOAsivt7y+jqoF6c9lxfJx0bG2Be1tJh6Nk+lIyeITp4ievKUYqD90g+p3RjPDY2Z70SZlyzePEt09x7FhGgy4AdSO4fdRme7NXyCSd2DiSBQd5gwEQZSuzVrtcmXgw5IdexJig8ZCQ3ohqIvKWl1E1FCKht50ktNOKmngXiwjchwW6bgFMMKT0ADpOo1C7XOKiGf3csOsvIhiwcy+7Ps47izTRSGH005fYoTorhcAAAAAElFTkSuQmCC"
+          alt="Google Play logo"
+        />
+        <span class="btn-text">Play on Google Play</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </main>
+
+  <body>
+    <header class="header">
+  <div class="header__container">
+    <div class="header__wrapper">
+      <a class="nav-logo" href="./index.html" aria-label="Bee Brilliant Blast home">
+        Bee Brilliant Blast
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__burger-wrapper">
+        <button class="burger-btn" type="button" data-menu-open aria-label="Open menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="burger-btn__icon" width="47" height="47" aria-hidden="true">
+            <use href="/evpl_vite_template/assets/icons-R7fC5tFG.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <nav class="burger-menu" id="mobile-menu" data-visible="false" aria-label="Mobile navigation">
+          <ul class="burger-menu__list">
+            <li><a class="burger-menu__link" href="#about">About</a></li>
+            <li><a class="burger-menu__link" href="#gallery">Gallery</a></li>
+            <li><a class="burger-menu__link" href="#reviews">Reviews</a></li>
+            <li><a class="burger-menu__link" href="#faq">FAQ</a></li>
+            <li><a class="burger-menu__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
 </header>
 
     <main>
+
+
       <section class="hero-section">
   <div class="container hero-container">
     <div class="hero-wrapper">
@@ -95,20 +175,10 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+
   </div>
 </footer>
 
-
   </body>
+
 </html>
