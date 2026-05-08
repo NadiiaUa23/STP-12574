@@ -1,0 +1,111 @@
+.hero-container {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
+        url('../img/hero/hero-mobile-1x.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: "Modak", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 6px #944018; 
+}
+
+.highlight {
+    font-family: "Modak", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    color: #ffbc3e;
+    text-shadow: 0 8px 4px #e53c7d;
+
+}
+
+.btn-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-logo {
+    width: 32px;
+    height: auto;
+}
+        
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 220px;
+    height: 50px;
+
+    background-image: url("/img/hero/button-mobile-1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-decoration: none;
+
+}
+
+@media (max-width: 767px) and (min-resolution: 192dpi) {
+    .hero-btn {
+        background-image: url("/img/hero/button-mobile-2x.png");
+    }
+    .hero-container {
+        background:
+            linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
+            url('./img/hero/hero-mobile-2x.png') center/cover no-repeat;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-btn {
+        width: 519px;
+        height: 119px;
+
+        background-image: url("/img/button-desktop-1x.png");
+    }
+    .hero-container {
+        background:
+            linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
+            url('./img/hero/hero-desktop-1x.png') center/cover no-repeat;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-btn {
+        background-image: url("/img/button-desktop-2x.png");
+    }
+    .hero-container {
+        background:
+            linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
+            url('./img/hero/hero-desktop-2x.png') center/cover no-repeat;
+    }
+}
+
+.hero-btn:hover {
+    filter: brightness(0.9);
+}
+
+.hero-btn:active {
+    filter: brightness(0.7);
+    transform: scale(0.97);
+}
