@@ -8,19 +8,19 @@
   border-bottom: 2px solid #ffda66;
 }
 
-.header__container {
+.header_container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.header__wrapper {
+.header_wrapper {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 72px;
-  padding: 0 80px;
+  padding: 0 82px;
 }
 
 .nav-logo {
@@ -29,6 +29,7 @@
   line-height: 1;
   color: #a65d35;
   text-decoration: none;
+  font-family: var(--font-primary);
 }
 
 .nav-list {
@@ -54,7 +55,7 @@
   transition: color 180ms ease;
 }
 
-.header__burger-wrapper {
+.header_burger-wrapper {
   display: none;
   position: relative;
 }
@@ -73,7 +74,7 @@
   cursor: pointer;
 }
 
-.burger-btn__icon {
+.burger-btn_icon {
   display: block;
   width: 47px;
   height: 47px;
@@ -82,16 +83,16 @@
   transition: transform 180ms ease;
 }
 
-.burger-btn:hover .burger-btn__icon {
+.burger-btn:hover .burger-btn_icon {
   transform: scale(1.05);
 }
 
 .burger-menu {
   position: absolute;
 
-  top: calc(100% + 10px);
+  top: calc(100% + 34px);
   right: -10px;
-  width: 98px;
+  width: 130px;
   padding: 19px 16px 21px 16px;
   background: #ffffff;
   border-radius: 20px;
@@ -113,7 +114,7 @@
   transform: translateY(0);
 }
 
-.burger-menu__list {
+.burger-menu_list {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -122,18 +123,25 @@
   list-style: none;
 }
 
-.burger-menu__link {
+.burger-menu_link {
   font-weight: 600;
   font-size: 20px;
   color: #3f94ff;
   text-decoration: none;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.burger-menu_link:hover,
+.burger-menu_link:focus {
+  text-decoration: underline;
 }
 
 /* MOBILE */
 
 @media screen and (max-width: 767px) {
 
-  .header__container {
+  .header_container {
     width: 100%;
   }
 
@@ -141,16 +149,16 @@
     top: 0;
   }
 
-  .header__wrapper {
+  .header_wrapper {
     min-height: 44px;
-    padding: 0 20px;
+    padding: 24px 20px;
   }
 
   .nav {
     display: none;
   }
 
-  .header__burger-wrapper {
+  .header_burger-wrapper {
     display: block;
   }
 
@@ -158,8 +166,8 @@
     font-size: 16px;
   }
 
-  .burger-btn__icon {
-    width: 20px;
-    height: 20px;
+  .burger-btn_icon {
+    width: 47px;
+    height: 47px;
   }
 }

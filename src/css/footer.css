@@ -1,132 +1,137 @@
 .footer {
   width: 100%;
   background: var(--terracotta, #944018);
+
 }
 
-.footer__container {
+.footer_container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 48px 80px 18px;
+  padding: 46px 82px 18px;
 }
 
-.footer__top {
+.footer_top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.footer__info {
+.footer_info {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-.footer__logo {
+.footer_logo {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
-  color: var(--footer-logo, #FFF3D7);
+  color: #FFF3D7;
   text-decoration: none;
+  font-family: var(--font-secondary);
 }
 
-.footer__contact {
+.footer_contact {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  color: var(--footer-logo, #FFF3D7);
+  color: #FFF3D7;
+
 }
 
-.footer__contact-title {
+.footer_contact-title {
   margin: 0;
   font-weight: 700;
   font-size: 16px;
+  font-family: var(--font-primary);
 }
 
-.footer__email {
+.footer_email {
   font-size: 16px;
   color: #ffe9c4;
   text-decoration: none;
+  font-family: var(--font-primary);
 }
 
-.footer__nav {
+.footer_nav {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding-top: 26px;
 }
 
-.footer__link {
+.footer_link {
   font-size: 16px;
   color: #ffe9c4;
   text-decoration: none;
-
+  font-family: var(--font-primary);
 }
 
-.footer__link:hover,
-.footer__link:focus {
+.footer_link:hover,
+.footer_link:focus {
   text-decoration: underline;
 
 }
 
-.footer__copy {
+.footer_copy {
   margin: 34px 0 0;
   text-align: center;
   font-size: 16px;
   color: #ffe9c4;
+  font-family: var(--font-primary);
 }
 
 @media screen and (max-width: 767px) {
-  .footer__container {
-    padding: 18px 28px 24px;
+  .footer_container {
+    padding: 14px 20px 24px;
   }
 
-  .footer__top {
+  .footer_top {
     flex-direction: column;
     align-items: flex-start;
     gap: 44px;
   }
 
-  .footer__info {
+  .footer_info {
     gap: 52px;
   }
 
-  .footer__logo {
+  .footer_logo {
     font-size: 20px;
     line-height: 1.2;
   }
 
-  .footer__contact {
+  .footer_contact {
     gap: 14px;
   }
 
-  .footer__contact-title {
+  .footer_contact-title {
     font-size: 20px;
     line-height: 1.2;
   }
 
-  .footer__email {
+  .footer_email {
     font-size: 20px;
     line-height: 1.2;
   }
 
-  .footer__nav {
+  .footer_nav {
     padding-top: 0;
     gap: 16px;
   }
 
-  .footer__link {
+  .footer_link {
     font-size: 20px;
     line-height: 1.2;
 
   }
 
-  .footer__link:hover,
-  .footer__link:focus {
+  .footer_link:hover,
+  .footer_link:focus {
     text-decoration: underline;
-
   }
 
-  .footer__copy {
+  .footer_copy {
     margin-top: 72px;
 
     max-width: 260px;
