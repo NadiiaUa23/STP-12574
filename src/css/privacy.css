@@ -1,10 +1,13 @@
-body {
-    min-height: 100vh;
+.legal-page {
+    background: var(--bg-color, #fff3d7);
+}
+
+.legal-page main {
+    flex: 1 0 auto;
 }
 
 .legal {
     padding: 170px 0 80px;
-    background: #fff4d8;
 }
 
 .legal__container {
@@ -43,19 +46,16 @@ body {
 
 @media screen and (max-width: 767px) {
     .legal {
-
-        padding: 80px 40px 60px 40px;
-
-        background: #fff4d8;
+        padding: 80px 0 60px;
     }
 
     .legal__container {
-        padding: 0;
+        padding: 0 40px;
     }
 
     .legal__title {
         margin-bottom: 28px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .legal__content p {

@@ -1,7 +1,6 @@
 .footer {
   width: 100%;
-  background: #944018;
-
+  background: var(--terracotta, #944018);
 }
 
 .footer__container {
@@ -26,7 +25,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
-  color: #FFF3D7;
+  color: var(--footer-logo, #FFF3D7);
   text-decoration: none;
 }
 
@@ -34,7 +33,7 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  color: #FFF3D7;
+  color: var(--footer-logo, #FFF3D7);
 }
 
 .footer__contact-title {
@@ -124,6 +123,7 @@
   .footer__link:hover,
   .footer__link:focus {
     text-decoration: underline;
+
   }
 
   .footer__copy {
