@@ -1,52 +1,158 @@
 .faq-section {
-    background-color: var(--bg-color);
     padding: 80px 0;
-    text-align: center;
+    background-color: var(--bg-color);
 }
 
+/* FAQ TITLE */
 
-.faq-title-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.about-title {
-    display: inline-flex;
+.section-title {
+    display: flex;
     align-items: center;
     justify-content: center;
-
-    margin: 0 auto 32px;
-
+    width: 165px;
+    height: 60px;
+    margin: 0 auto 40px;
     font-family: var(--font-accent);
+    font-weight: 400;
     font-size: 28px;
+    line-height: 1;
     color: var(--bg-color);
-
+    text-shadow: 0 4px 0 var(--sky-blue);
     background-image: url("/img/title/title-wood-mob-1x.png");
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
-    text-shadow: 0 8px 4px #2b95f9;
+    background-size: contain;
 }
 
-@media (max-width: 767px) and (min-resolution: 192dpi) {
-    .about-title {
+/* FAQ LAYOUT */
+
+.faq-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.faq-image-wrapper {
+    display: none;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 648px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* FAQ ITEM */
+
+.faq-item {
+    padding: 10px 14px 12px;
+    background-color: #ffffff;
+    border: 1px solid #d9b29b;
+    border-radius: 20px;
+}
+
+/*FAQ QUESTION*/
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    padding: 0;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+    color: var(--terracotta);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.faq-icon {
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* FAQ ANSWER */
+
+.faq-answer {
+    display: none;
+    margin-top: 6px;
+}
+
+.faq-answer p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.35;
+    text-align: left;
+    color: #d2a272;
+}
+
+.faq-item.is-open .faq-answer {
+    display: block;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 768px) {
+    .section-title {
+        width: 387px;
+        height: 140px;
+        margin-bottom: 56px;
+        font-size: 60px;
+        text-shadow: 0 8px 0 var(--sky-blue);
+        background-image: url("/img/title/title-wood-desk-1x.png");
+    }
+
+    .faq-image-wrapper {
+        display: block;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 560px;
+    }
+
+    .faq-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 80px;
+    }
+
+    .faq-item {
+        padding: 18px 28px 20px;
+        border-radius: 28px;
+    }
+
+    .faq-question {
+        font-size: 20px;
+    }
+
+    .faq-answer p {
+        font-size: 16px;
+    }
+}
+
+/*RETINA*/
+
+@media screen and (min-resolution: 192dpi) {
+    .section-title {
         background-image: url("/img/title/title-wood-mob-2x.png");
     }
 }
 
-@media screen and (min-width: 768px) {
-    .about-title {
-        background-image: url("/img/title/title-wood-desk-1x.png");
-    }
-
-    .about-title {
-        font-size: 60px;
-    }
-}
-
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .about-title {
+    .section-title {
         background-image: url("/img/title/title-wood-desk-2x.png");
     }
 }
