@@ -1,0 +1,86 @@
+.about-section {
+    background-color: var(--bg-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-title-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.about-bee {
+    position: absolute;
+    right: -40px;
+    bottom: -10px;
+    width: 40px;
+}
+
+.about-bee img {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .about-bee {
+        right: -50px;
+        bottom: -15px;
+    }
+
+    .about-bee img {
+        width: 60px;
+    }
+}
+
+.about-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 32px;
+
+    font-family: var(--font-accent);
+    font-size: 28px;
+    color: var(--bg-color);
+
+    background-image: url("/img/title/title-wood-mob-1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-shadow: 0 8px 4px #2b95f9;
+}
+
+@media (max-width: 767px) and (min-resolution: 192dpi) {
+    .about-title {
+        background-image: url("/img/title/title-wood-mob-2x.png");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-title {
+        background-image: url("/img/title/title-wood-desk-1x.png");
+    }
+    .about-title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi){
+    .about-title {
+        background-image: url("/img/title/title-wood-desk-2x.png");
+    }
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.6;
+    color: var(--terracotta);
+}
+
