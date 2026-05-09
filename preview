@@ -1,0 +1,54 @@
+
+> evpl_vite_template@1.0.0 build
+> vite build --base=/evpl_vite_template/
+
+[36mvite v5.4.6 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 7 modules transformed.
+rendering chunks...
+computing gzip size...
+[2m../dist/[22m[32massets/sprite-BnPQ37u_.svg              [39m[1m[2m    0.12 kB[22m[1m[22m[2m │ gzip: 0.12 kB[22m
+[2m../dist/[22m[32massets/button-mobile-1x-lZBniXZk.png    [39m[1m[2m    1.74 kB[22m[1m[22m
+[2m../dist/[22m[32mpage-3.html                             [39m[1m[2m    2.11 kB[22m[1m[22m[2m │ gzip: 0.80 kB[22m
+[2m../dist/[22m[32mpage-2.html                             [39m[1m[2m    2.11 kB[22m[1m[22m[2m │ gzip: 0.80 kB[22m
+[2m../dist/[22m[32massets/bee-mob-1x-Bk5E_60l.png          [39m[1m[2m    2.39 kB[22m[1m[22m
+[2m../dist/[22m[32massets/title-wood-mob-1x-DTm-94kY.png   [39m[1m[2m    3.55 kB[22m[1m[22m
+[2m../dist/[22m[32massets/button-mobile-2x-BSTbrbyA.png    [39m[1m[2m    5.33 kB[22m[1m[22m
+[2m../dist/[22m[32massets/bee-mob-2x-DAkL9BTQ.png          [39m[1m[2m    5.34 kB[22m[1m[22m
+[2m../dist/[22m[32mindex.html                              [39m[1m[2m    6.22 kB[22m[1m[22m[2m │ gzip: 3.06 kB[22m
+[2m../dist/[22m[32massets/button-desktop-1x-wDOJlYV1.png   [39m[1m[2m    6.78 kB[22m[1m[22m
+[2m../dist/[22m[32massets/bee-desk-1x-BgOObJtj.png         [39m[1m[2m    7.75 kB[22m[1m[22m
+[2m../dist/[22m[32massets/title-wood-mob-2x-DPY7dFaR.png   [39m[1m[2m   10.15 kB[22m[1m[22m
+[2m../dist/[22m[32massets/title-wood-desk-1x-BNJz8iHi.png  [39m[1m[2m   11.70 kB[22m[1m[22m
+[2m../dist/[22m[32massets/button-desktop-2x-B8AuV1sG.png   [39m[1m[2m   17.81 kB[22m[1m[22m
+[2m../dist/[22m[32massets/bee-desk-2x-nWLBqvTJ.png         [39m[1m[2m   20.49 kB[22m[1m[22m
+[2m../dist/[22m[32massets/title-wood-desk-2x-B2WGmljC.png  [39m[1m[2m   38.59 kB[22m[1m[22m
+[2m../dist/[22m[32massets/hero-mobile-1x-CAm-ODWr.png      [39m[1m[2m   82.60 kB[22m[1m[22m
+[2m../dist/[22m[32massets/hero-desktop-1x-wy5GLLjQ.png     [39m[1m[2m  345.54 kB[22m[1m[22m
+[2m../dist/[22m[32massets/hero-desktop-2x-BQpy7v9v.png     [39m[1m[2m1,226.40 kB[22m[1m[22m
+[2m../dist/[22m[35massets/styles-CKi6BHqw.css              [39m[1m[2m    5.88 kB[22m[1m[22m[2m │ gzip: 1.85 kB[22m
+[2m../dist/[22m[36mindex.js                                [39m[1m[2m    1.05 kB[22m[1m[22m[2m │ gzip: 0.53 kB[22m[2m │ map: 0.79 kB[22m
+[32m✓ built in 6.13s[39m
+
+✨ [36m[vite-plugin-image-optimizer][39m - optimized images successfully: 
+[2mdist[22m/[94massets/sprite-BnPQ37u_.svg[39m              [90m[32m-97%[39m[90m   [39m [2m3.69 kB ⭢  0.12 kB[22m
+[2mdist[22m/[94massets/bee-mob-1x-Bk5E_60l.png[39m          [90m[32m-46%[39m[90m   [39m [2m4.31 kB ⭢  2.33 kB[22m
+[2mdist[22m/[94massets/bee-mob-2x-DAkL9BTQ.png[39m          [90m[32m-62%[39m[90m   [39m [2m13.64 kB ⭢  5.21 kB[22m
+[2mdist[22m/[94massets/button-mobile-2x-BSTbrbyA.png[39m    [90m[32m-83%[39m[90m   [39m [2m29.98 kB ⭢  5.20 kB[22m
+[2mdist[22m/[94massets/bee-desk-1x-BgOObJtj.png[39m         [90m[32m-66%[39m[90m   [39m [2m21.81 kB ⭢  7.57 kB[22m
+[2mdist[22m/[94massets/button-mobile-1x-lZBniXZk.png[39m    [90m[32m-83%[39m[90m   [39m [2m9.95 kB ⭢  1.70 kB[22m
+[2mdist[22m/[94massets/button-desktop-1x-wDOJlYV1.png[39m   [90m[32m-83%[39m[90m   [39m [2m37.63 kB ⭢  6.62 kB[22m
+[2mdist[22m/[94massets/title-wood-mob-1x-DTm-94kY.png[39m   [90m[32m-78%[39m[90m   [39m [2m15.38 kB ⭢  3.46 kB[22m
+[2mdist[22m/[94massets/button-desktop-2x-B8AuV1sG.png[39m   [90m[32m-84%[39m[90m   [39m [2m104.31 kB ⭢  17.39 kB[22m
+[2mdist[22m/[94massets/title-wood-mob-2x-DPY7dFaR.png[39m   [90m[32m-80%[39m[90m   [39m [2m48.83 kB ⭢  9.91 kB[22m
+[2mdist[22m/[94massets/title-wood-desk-1x-BNJz8iHi.png[39m  [90m[32m-80%[39m[90m   [39m [2m55.90 kB ⭢  11.43 kB[22m
+[2mdist[22m/[94massets/bee-desk-2x-nWLBqvTJ.png[39m         [90m[32m-71%[39m[90m   [39m [2m67.99 kB ⭢  20.01 kB[22m
+[2mdist[22m/[94massets/title-wood-desk-2x-B2WGmljC.png[39m  [90m[32m-80%[39m[90m   [39m [2m186.06 kB ⭢  37.68 kB[22m
+[2mdist[22m/[94massets/hero-mobile-1x-CAm-ODWr.png[39m      [90m[32m-80%[39m[90m   [39m [2m392.76 kB ⭢  80.66 kB[22m
+[2mdist[22m/[94massets/hero-desktop-1x-wy5GLLjQ.png[39m     [90m[32m-79%[39m[90m   [39m [2m1578.11 kB ⭢  337.45 kB[22m
+[2mdist[22m/[94massets/hero-desktop-2x-BQpy7v9v.png[39m     [90m[32m-74%[39m[90m   [39m [2m4496.55 kB ⭢  1197.65 kB[22m
+[2mdist[22m/[94micon_game.svg[39m                           [90m[32m-1%[39m[90m    [39m [2m599.52 kB ⭢  599.50 kB[22m
+
+💰 total savings = [32m5322.51kB[39m/[32m7666.41kB[39m ≈ [32m69%[39m
+
+
