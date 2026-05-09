@@ -11,7 +11,7 @@
 // });
 const openBtnEl = document.querySelector('[data-menu-open]');
 const burgerMenuEl = document.querySelector('[data-visible]');
-const menuLinks = document.querySelectorAll('.burger-menu__link');
+const menuLinks = document.querySelectorAll('.burger-menu_link');
 
 const openMenu = () => {
   burgerMenuEl.dataset.visible = 'true';
