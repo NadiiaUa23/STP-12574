@@ -1,6 +1,7 @@
 .how-section {
     background-color: var(--bg-color);
     text-align: center;
+    margin-bottom: 96px;
 }
 
 .how-title {
@@ -11,7 +12,7 @@
     width: 267px;
     height: 45px;
 
-    margin: 0 auto 16px;
+    margin: 0 auto 40px;
 
     font-family: var(--font-accent);
     font-size: 28px;
@@ -27,12 +28,10 @@
 
 .how-subtitle {
     display: inline-block;
-    margin: 0 auto 74px;
-
+    margin: 0 auto 40px;
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: 34px;
-
     color: var(--terracotta);
 }
 
@@ -93,5 +92,4 @@
         background-image: url("/img/title/title-wood-desk-1x.png"); 
     }
 }
-
 
