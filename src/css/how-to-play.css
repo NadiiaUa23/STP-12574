@@ -36,7 +36,7 @@
 }
 
 .how-swiper {
-    padding-bottom: 20px;
+    height: 812px;
 }
 
 .how-card {
@@ -80,16 +80,11 @@
     color: var(--terracotta);
 }
 
-/* mobile */
-/* .how-swiper .swiper-slide {
-    width: 240px;
-} */
+
 
 /* desktop */
 @media (min-width: 768px) {
-    /* .how-swiper .swiper-slide {
-        width: auto;
-    } */
+    
     .how-title {    
         font-size: 60px;
         width: 569px;
@@ -98,4 +93,3 @@
     }
 }
 
-/* test */
