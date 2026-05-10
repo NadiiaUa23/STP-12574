@@ -1,0 +1,87 @@
+.features-section {
+    background-color: var(--bg-color);
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.features-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 267px;
+    height: 45px;
+
+    margin: 0 auto 40px;
+
+    font-family: var(--font-accent);
+    font-size: 28px;
+    color: var(--bg-color);
+
+    background-image: url("/img/title/title-wood-mob-1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-shadow: 0 8px 4px #2b95f9;
+}
+
+.features-subtitle {
+    margin: 0 auto 40px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 34px;
+    color: var(--terracotta);
+    text-transform: uppercase;
+}
+
+.features-list {
+    display: grid;
+    gap: 20px;
+}
+
+.features-list {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .features-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .features-card--wide {
+        grid-column: span 2;
+    }
+}
+
+.features-card {
+    border: 1px solid var(--terracotta);
+    border-radius: 30px;
+    padding: 38px;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    text-align: center;
+}
+
+.features-img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.features-card-title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--terracotta);
+
+    margin-bottom: 8px;
+}
+
+.features-text {
+    font-size: 14px;
+    color: var(--terracotta);
+}

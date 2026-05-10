@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  background-color: var(--bg-color);
 }
 
 
@@ -37,7 +38,6 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
-  background-color: var(--bg-color);
 }
 
 section {
