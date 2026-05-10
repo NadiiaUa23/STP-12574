@@ -1,4 +1,4 @@
 import './js/burgerMenu';
-import './js/swiper'; 
+import './js/swiper-cards'; 
 import './js/footer';
 import './js/faq';
