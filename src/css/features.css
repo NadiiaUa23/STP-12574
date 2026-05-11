@@ -12,7 +12,7 @@
     width: 267px;
     height: 45px;
 
-    margin: 0 auto 40px;
+    margin: 0 auto 32px;
 
     font-family: var(--font-accent);
     font-size: 28px;
@@ -30,7 +30,7 @@
     margin: 0 auto 40px;
     font-family: var(--font-primary);
     font-weight: 600;
-    font-size: 34px;
+    font-size: 20px;
     color: var(--terracotta);
     text-transform: uppercase;
 }
@@ -38,36 +38,28 @@
 .features-list {
     display: grid;
     gap: 20px;
-}
-
-.features-list {
     grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) {
-    .features-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 768px) {
-    .features-card--wide {
-        grid-column: span 2;
-    }
-}
-
 .features-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid var(--terracotta);
     border-radius: 30px;
-    padding: 38px;
-    width: 400px;
-    height: 400px;
+    padding: 16px 0 28px 0;
+    margin: 0 auto;
+    width: 306px;
+    height: 306px;
     background: #fff;
-    text-align: center;
+}
+
+.card-wrapper {
+    width: 160px;
 }
 
 .features-img {
-    width: 200px;
+    width: 153px;
     height: auto;
     margin-bottom: 16px;
 }
@@ -77,11 +69,42 @@
     font-weight: 700;
     font-size: 18px;
     color: var(--terracotta);
-
     margin-bottom: 8px;
 }
 
 .features-text {
     font-size: 14px;
     color: var(--terracotta);
+}
+
+@media (min-width: 768px) {
+
+    .features-title {
+        background-image: url("/img/title/title-wood-desk-1x.png");
+        font-size: 60px;
+        width: 569px;
+        height: 98px;
+    }
+    .features-subtitle {
+        font-size: 34px;
+    }
+    .features-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+    }
+    .card-wrapper {
+        width: 204px;
+    }
+    .features-card {
+        width: 400px;
+        height: 400px;
+        grid-column: span 1;
+    }
+    .features-card--wide {
+        width: 852px;
+        grid-column: span 2;
+    }
+    .features-card--wide .features-text  {
+        max-width: 408px;
+    }
 }
