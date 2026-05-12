@@ -1,20 +1,23 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 
-new Swiper('.how-swiper', {
-  direction: 'vertical', // mobile 
+const swiperConfigs = {
+  direction: 'vertical',
   slidesPerView: 'auto',
   spaceBetween: 42,
   grabCursor: true,
-  
   freeMode: true,
   mousewheel: true,
-
   breakpoints: {
     768: {
-      direction: 'horizontal', // desktop
+      direction: 'horizontal',
       spaceBetween: 48,
     },
   },
-});
+};
 
+const selectors = ['.how-swiper', '.gallery-swiper'];
+
+selectors.forEach(selector => {
+  new Swiper(selector, swiperConfigs);
+});
