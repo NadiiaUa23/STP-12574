@@ -31,18 +31,32 @@
     margin: 0 auto 40px;
     font-family: var(--font-primary);
     font-weight: 600;
-    font-size: 34px;
+    font-size: 20px;
     color: var(--terracotta);
+    text-transform: uppercase;
 }
 
 .how-swiper {
-    height: 812px;
+    max-height: 812px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.how-swiper .swiper-slide {
+    width: 306px;
+    height: 572px;
+    flex-shrink: 0;
 }
 
 .how-card {
     border: 1px solid var(--terracotta);
     border-radius: 30px;
-    padding: 32px;
+    padding: 80px 32px 32px 32px;
     width: 306px;
     height: 572px;
     background: #fff;
@@ -63,13 +77,14 @@
 .how-img {
     width: 225px;
     height: auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    display: block;
+    margin: 0 auto 32px;
 }
 
 .how-card-title {
     font-weight: 800;
     font-size: 42px;
+    line-height: 1.15;
     margin-bottom: 14px;
     color: var(--terracotta);
 }
@@ -77,10 +92,9 @@
 .how-card-text {
     font-weight: 500;
     font-size: 24px;
+    line-height: 1.15;
     color: var(--terracotta);
 }
-
-
 
 /* desktop */
 @media (min-width: 768px) {
@@ -91,5 +105,20 @@
         height: 98px;
         background-image: url("/img/title/title-wood-desk-1x.png"); 
     }
+    .how-subtitle {
+        font-size: 34px;
+    }
+ 
+    /* .swiper-wrapper {
+     height: auto;
+    } */
+        /* .how-swiper {
+            max-height: 812px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+        
 }
 

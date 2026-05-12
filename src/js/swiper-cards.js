@@ -6,7 +6,8 @@ const swiperConfigs = {
   slidesPerView: 'auto',
   spaceBetween: 42,
   grabCursor: true,
-  freeMode: true,
+  
+  freeMode: false,
   mousewheel: true,
   breakpoints: {
     768: {

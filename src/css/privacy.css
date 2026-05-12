@@ -7,12 +7,14 @@
 }
 
 .legal {
-    padding: 170px 82px;
+    padding: 170px 0;
 }
 
+
 .legal_container {
-    width: 100%;
-    max-width: 1340px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 88px;
 }
 
 .legal_title {
@@ -41,7 +43,12 @@
 
 @media screen and (max-width: 767px) {
     .legal {
-        padding: 120px 20px;
+        padding: 120px 0;
+    }
+
+    .legal_container {
+        margin: 0 auto;
+        padding: 0 40px;
     }
 
     .legal_title {
@@ -54,7 +61,4 @@
         line-height: 1.5;
     }
 
-    .legal_content p+p {
-        margin-top: 12px;
-    }
 }
