@@ -1,7 +1,7 @@
 .about-section {
     background-color: var(--bg-color);
-    padding: 80px 0;
     text-align: center;
+    margin-bottom: 96px;
 }
 
 .about-title-wrapper {
@@ -38,6 +38,9 @@
     align-items: center;
     justify-content: center;
 
+    width: 267px;
+    height: 45px;
+
     margin: 0 auto 32px;
 
     font-family: var(--font-accent);
@@ -61,9 +64,9 @@
 @media screen and (min-width: 768px) {
     .about-title {
         background-image: url("/img/title/title-wood-desk-1x.png");
-    }
-    .about-title {
         font-size: 60px;
+        width: 569px;
+        height: 98px;
     }
 }
 

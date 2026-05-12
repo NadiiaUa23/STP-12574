@@ -26,9 +26,7 @@
     color: #111111;
 }
 
-.legal_content {
-    max-width: 1240px;
-}
+
 
 .legal_content p {
     margin: 0;
@@ -40,7 +38,7 @@
 }
 
 .legal_content p+p {
-    margin-top: 4px;
+    margin: 8px 0 8px 0;
 }
 
 @media screen and (max-width: 767px) {
