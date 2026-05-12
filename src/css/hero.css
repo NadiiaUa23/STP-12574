@@ -2,20 +2,7 @@
 .hero-section {
     background-image:
         linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
-        url('/img/hero/hero-mobile-1x.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 130px;
-    padding-bottom: 288px;
-}
-            
-.hero-container {
-    background: none;
-}
-
-.hero-wrapper {
+        url('/img/hero/hero-mobile-1x.png') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -23,24 +10,27 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 328px;
+    color: #fff;
+    margin-bottom: 96px;
 }
 
 .hero-title {
     font-family: "Modak", sans-serif;
     font-weight: 400;
-    font-size: 38px;
-    color: var(--gold-yellow);
-    text-shadow: 0 8px 4px var(--raspberry-glaze);
+    font-size: 34px;
+    text-align: center;
+    color: #fff;
+    -webkit-text-stroke: 1px var(--terracotta); 
 }
 
 .hero-subtitle {
     font-family: "Modak", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    color: #fff;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--terracotta);
+    font-size: 80px;
+    text-align: center;
+    color: var(--gold-yellow);
+    text-shadow: 0 8px 4px var(--raspberry-glaze);
+
 }
 
 .btn-text {
@@ -82,7 +72,7 @@
     .hero-section {
         background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
-            url('/img/hero/hero-mobile-2x.png');
+            url('/img/hero/hero-mobile-2x.png') center/cover no-repeat;
     }
 }
 
@@ -96,7 +86,7 @@
     .hero-section {
         background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
-            url('/img/hero/hero-desktop-1x.png');
+            url('/img/hero/hero-desktop-1x.png') center/cover no-repeat;
     }
     .hero-wrapper {
         max-width: 656px;
@@ -125,7 +115,7 @@
     .hero-section {
         background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
-            url('/img/hero/hero-desktop-2x.png');
+            url('/img/hero/hero-desktop-2x.png') center/cover no-repeat;
     }
 }
 
