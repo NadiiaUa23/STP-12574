@@ -1,0 +1,90 @@
+.gallery-section {
+    background-color: var(--bg-color);
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.gallery-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 267px;
+    height: 45px;
+
+    margin: 0 auto 32px;
+
+    font-family: var(--font-accent);
+    font-size: 28px;
+    color: var(--bg-color);
+
+    background-image: url("/img/title/title-wood-mob-1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-shadow: 0 8px 4px var(--sky-blue);
+}
+
+.gallery-subtitle {
+    margin: 0 auto 40px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--terracotta);
+    text-transform: uppercase;
+}
+
+.gallery-swiper {
+    max-height: 740px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.gallery-swiper .swiper-slide {
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.gallery-img {
+    display: block;
+    width: 306px;
+    height: 488px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px var(--raspberry-glaze);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .gallery-title {
+        width: 569px;
+        height: 98px;
+        font-size: 60px;
+        background-image: url("/img/title/title-wood-desk-1x.png");
+    }
+
+    .gallery-subtitle {
+        font-size: 34px;
+    }
+
+    .gallery-swiper {
+        width: 100%;
+    }
+
+    .gallery-swiper .swiper-slide {
+        height: 610px;
+    }
+    
+    .gallery-img {
+        width: 375px;
+        height: 598px;
+    }
+}
