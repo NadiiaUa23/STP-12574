@@ -1,7 +1,7 @@
 .why-section {
     background-color: var(--bg-color);
     text-align: center;
-    padding-bottom: 96px;
+    padding-bottom: 32px;
 }
 
 .why-title {
@@ -12,7 +12,7 @@
     width: 267px;
     height: 45px;
 
-    margin: 0 auto 40px;
+    margin: 0 auto 16px;
 
     font-family: var(--font-accent);
     font-size: 28px;
@@ -27,18 +27,18 @@
 }
 
 .why-subtitle {
-    margin-bottom: 40px;
-
+    margin: 0 auto 16px;
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: 20px;
     color: var(--terracotta);
+    text-transform: uppercase;
 }
 
 .why-list {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 22px;
 }
 
 .why-item {
@@ -48,42 +48,51 @@
 .why-img {
     width: 100%;
     max-width: 306px;
-    margin: 0 auto 16px;
+    margin: 0 auto 18px;
     display: block;
 }
 
 .why-card-title {
     font-family: var(--font-primary);
     font-weight: 800;
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.15;
     color: var(--terracotta);
-    margin-bottom: 8px;
+    padding-bottom: 4px;
 }
 
 .why-text {
     font-family: var(--font-primary);
     font-weight: 500;
     font-size: 12px;
+    line-height: 1.15;
     color: var(--terracotta);
+    max-width: 145px;
+    margin: 0 auto;
 }
 
-@media (max-width: 767px) and (min-resolution: 192dpi) {
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
     .why-title {
         background-image: url("/img/title/title-wood-mob-2x.png");
     }
 }
 
 @media screen and (min-width: 768px) {
+    .why-section {
+        padding-bottom: 96px;
+    }
+
     .why-title {
+        background-image: url("/img/title/title-wood-desk-1x.png");
+        font-size: 60px;
         width: 569px;
         height: 98px;
-        font-size: 60px;
-
-        background-image: url("/img/title/title-wood-desk-1x.png");
+        margin-bottom: 40px;
     }
 
     .why-subtitle {
-        font-size: 24px;
+        font-size: 34px;
+        margin-bottom: 40px;
     }
 
     .why-list {
@@ -95,13 +104,24 @@
 
     .why-img {
         max-width: 430px;
+        margin-bottom: 24px;
     }
 
     .why-card-title {
         font-size: 32px;
+        padding-bottom: 8px;
+
     }
 
     .why-text {
         font-size: 18px;
+        padding-bottom: 0;
+        max-width: 244px;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .why-title {
+        background-image: url("/img/title/title-wood-desk-2x.png");
     }
 }
