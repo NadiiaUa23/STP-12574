@@ -1,7 +1,7 @@
 .how-section {
     background-color: var(--bg-color);
     text-align: center;
-    margin-bottom: 96px;
+    margin-bottom: 32px;
 }
 
 .how-title {
@@ -12,7 +12,7 @@
     width: 267px;
     height: 45px;
 
-    margin: 0 auto 40px;
+    margin: 0 auto 16px;
 
     font-family: var(--font-accent);
     font-size: 28px;
@@ -28,7 +28,7 @@
 
 .how-subtitle {
     display: inline-block;
-    margin: 0 auto 40px;
+    margin: 0 auto 16px;
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: 20px;
@@ -96,29 +96,34 @@
     color: var(--terracotta);
 }
 
-/* desktop */
-@media (min-width: 768px) {
-    
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .how-title {
+        background-image: url("/img/title/title-wood-mob-2x.png");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .how-section {
+        margin-bottom: 96px;
+    }
+
     .how-title {    
         font-size: 60px;
         width: 569px;
         height: 98px;
         background-image: url("/img/title/title-wood-desk-1x.png"); 
+        margin-bottom: 40px;
     }
+
     .how-subtitle {
         font-size: 34px;
+        margin-bottom: 40px;
     }
  
-    /* .swiper-wrapper {
-     height: auto;
-    } */
-        /* .how-swiper {
-            max-height: 812px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        } */
-        
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .how-title {
+        background-image: url("/img/title/title-wood-desk-2x.png");
+    }
+}
