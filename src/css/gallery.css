@@ -1,6 +1,7 @@
 .gallery-section {
     background-color: var(--bg-color);
     text-align: center;
+    margin-top: 32px;
     margin-bottom: 32px;
 }
 
@@ -74,6 +75,7 @@
     }
     
     .gallery-section {
+        margin-top: 96px;
         margin-bottom: 96px;
     }
 
