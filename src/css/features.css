@@ -1,7 +1,7 @@
 .features-section {
     background-color: var(--bg-color);
     text-align: center;
-    margin-bottom: 96px;
+    margin-bottom: 32px;
 }
 
 .features-title {
@@ -12,7 +12,7 @@
     width: 267px;
     height: 45px;
 
-    margin: 0 auto 32px;
+    margin: 0 auto 16px;
 
     font-family: var(--font-accent);
     font-size: 28px;
@@ -27,7 +27,7 @@
 }
 
 .features-subtitle {
-    margin: 0 auto 40px;
+    margin: 0 auto 16px;
     font-family: var(--font-primary);
     font-weight: 600;
     font-size: 20px;
@@ -89,18 +89,27 @@
     flex-shrink: 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .features-title {
+        background-image: url("/img/title/title-wood-mob-2x.png");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .features-section {
+        margin-bottom: 96px;
+    }
 
     .features-title {
         background-image: url("/img/title/title-wood-desk-1x.png");
         font-size: 60px;
         width: 569px;
         height: 98px;
-        margin-bottom: 68px;
+        margin-bottom: 40px;
     }
     .features-subtitle {
         font-size: 34px;
-        margin-bottom: 68px;
+        margin-bottom: 40px;
     }
     .features-list {
         grid-template-columns: repeat(3, 1fr);
@@ -136,5 +145,11 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 1.15;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .features-title {
+        background-image: url("/img/title/title-wood-desk-2x.png");
     }
 }
