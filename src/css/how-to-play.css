@@ -8,21 +8,16 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     width: 267px;
     height: 45px;
-
     margin: 0 auto 16px;
-
     font-family: var(--font-accent);
     font-size: 28px;
     color: var(--bg-color);
-
     background-image: url("/img/title/title-wood-mob-1x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
     text-shadow: 0 8px 4px var(--sky-blue);
 }
 
@@ -68,10 +63,9 @@
     position: absolute;
     top: 32px;
     left: 32px;
-
     font-weight: 800;
     font-size: 42px;
-    color:var(--raspberry-glaze);
+    color: var(--raspberry-glaze);
 }
 
 .how-img {
@@ -107,11 +101,11 @@
         margin-bottom: 96px;
     }
 
-    .how-title {    
+    .how-title {
         font-size: 60px;
         width: 569px;
         height: 98px;
-        background-image: url("/img/title/title-wood-desk-1x.png"); 
+        background-image: url("/img/title/title-wood-desk-1x.png");
         margin-bottom: 40px;
     }
 
@@ -119,7 +113,6 @@
         font-size: 34px;
         margin-bottom: 40px;
     }
- 
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
