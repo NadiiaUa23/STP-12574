@@ -8,7 +8,9 @@ const swiperConfigs = {
   grabCursor: true,
   
   freeMode: false,
-  mousewheel: true,
+  mousewheel: {
+  releaseOnEdges: true
+},
   breakpoints: {
     768: {
       direction: 'horizontal',

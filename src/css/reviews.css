@@ -1,66 +1,65 @@
-/* =========================
-   REVIEWS SECTION
-========================= */
-
 .reviews-section {
     padding: 80px 0;
     background-color: var(--bg-color);
+    text-align: center;
 }
 
-/* =========================
-   REVIEWS LIST
-========================= */
+.reviews-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 569px;
+    height: 98px;
+    margin: 0 auto 136px;
+    font-family: var(--font-accent);
+    font-size: 60px;
+    line-height: 1;
+    color: var(--bg-color);
+    text-shadow: 0 8px 4px var(--sky-blue);
+    background-image: image-set(url("/img/title/title-wood-desk-1x.png") 1x,
+            url("/img/title/title-wood-desk-2x.png") 2x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 
 .reviews-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px 48px;
-
     max-width: 1280px;
-
     margin: 0 auto;
     padding: 0;
-
     list-style: none;
 }
 
-/* =========================
-   REVIEW CARD
-========================= */
-
 .review-card {
     min-height: 230px;
-    padding: 46px 58px 40px;
-
+    padding: 30px 40px;
     background-color: #ffffff;
-
-    border: 2px solid var(--raspberry-glaze);
+    border: 2px solid var(--terracotta);
     border-radius: 42px;
-
-    box-shadow:
-        0 0 14px rgba(229, 60, 125, 0.35),
-        0 4px 10px rgba(229, 60, 125, 0.18);
+    box-shadow: 0 0 10px 0 #e53c7d;
 }
 
-/* =========================
-   REVIEW TEXT
-========================= */
+.review-card:nth-child(n + 5):not(.review-card--visible) {
+    display: none;
+}
+
+.review-card--visible {
+    display: block;
+}
 
 .review-text {
     max-width: 720px;
     margin: 0 0 42px;
-
     font-family: var(--font-primary);
     font-weight: 400;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.15;
-
+    text-align: start;
     color: var(--terracotta);
 }
-
-/* =========================
-   REVIEW AUTHOR
-========================= */
 
 .review-author {
     display: flex;
@@ -71,107 +70,84 @@
 .review-avatar {
     width: 92px;
     height: 92px;
-
     border-radius: 50%;
     object-fit: cover;
 }
 
 .review-name {
     margin: 0 0 10px;
-
     font-family: var(--font-primary);
     font-weight: 700;
     font-size: 30px;
     line-height: 1;
-
+    text-align: start;
     color: var(--terracotta);
 }
 
 .review-stars {
+    width: 110px;
+    height: 21px;
     margin: 0;
-
     font-size: 34px;
     line-height: 1;
     letter-spacing: 3px;
-
     color: var(--raspberry-glaze);
 }
 
-/* =========================
-   HIDDEN CARD
-========================= */
-
-.review-card--hidden {
-    display: none;
-}
-
-.review-card--visible {
-    display: block;
-}
-
-/* =========================
-   BUTTON
-========================= */
-
 .reviews-more-btn {
     display: block;
-
     margin: 32px auto 0;
     padding: 0;
-
     font-family: var(--font-primary);
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
-
     color: var(--terracotta);
-
     background-color: transparent;
     border: none;
-
     text-decoration: underline;
     text-underline-offset: 4px;
-
     cursor: pointer;
 }
 
-/* =========================
-   MOBILE
-========================= */
+.reviews-more-btn.is-hidden {
+    display: none;
+}
+
+/*MOBILE*/
 
 @media screen and (max-width: 767px) {
     .reviews-section {
-        padding: 60px 0;
+        padding: 30px 0;
+    }
+
+    .reviews-title {
+        width: 267px;
+        height: 45px;
+        margin-bottom: 28px;
+        font-size: 28px;
+        background-image: image-set(url("/img/title/title-wood-mob-1x.png") 1x,
+                url("/img/title/title-wood-mob-2x.png") 2x);
     }
 
     .reviews-list {
         display: flex;
         flex-direction: column;
         gap: 18px;
-
-        max-width: 100%;
+        max-width: 648px;
     }
 
     .review-card {
         min-height: auto;
         padding: 14px 16px 16px;
-
         border-width: 1px;
         border-radius: 20px;
-
-        box-shadow:
-            0 0 8px rgba(229, 60, 125, 0.25),
-            0 2px 4px rgba(229, 60, 125, 0.16);
-    }
-
-    .review-card:nth-child(n + 2):not(.review-card--visible) {
-        display: none;
+        box-shadow: none;
     }
 
     .review-text {
         margin-bottom: 14px;
-
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.2;
     }
 
@@ -186,18 +162,18 @@
 
     .review-name {
         margin-bottom: 2px;
-
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .review-stars {
-        font-size: 12px;
+        width: 54px;
+        height: 10px;
+        font-size: 10px;
         letter-spacing: 1px;
     }
 
     .reviews-more-btn {
         margin-top: 22px;
-
         font-size: 16px;
     }
 }

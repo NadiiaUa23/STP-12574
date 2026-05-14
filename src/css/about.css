@@ -1,58 +1,52 @@
 .about-section {
     background-color: var(--bg-color);
     text-align: center;
-    margin-bottom: 96px;
+    padding: 30px 0;
 }
 
 .about-title-wrapper {
     position: relative;
     display: inline-block;
+    width: 300px;
 }
 
 .about-bee {
     position: absolute;
-    right: -40px;
-    bottom: -10px;
-    width: 40px;
+    right: -10px;
+    bottom: -8px;
+    width: 45px;
 }
 
 .about-bee img {
     display: block;
-    width: 120px;
     height: auto;
-}
-
-@media (min-width: 768px) {
-    .about-bee {
-        right: -50px;
-        bottom: -15px;
-    }
-
-    .about-bee img {
-        width: 60px;
-    }
 }
 
 .about-title {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     width: 267px;
     height: 45px;
-
-    margin: 0 auto 32px;
-
+    margin: 0 auto 20px;
     font-family: var(--font-accent);
+    font-weight: 400;
     font-size: 28px;
     color: var(--bg-color);
-
     background-image: url("/img/title/title-wood-mob-1x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
     text-shadow: 0 8px 4px #2b95f9;
+}
+
+.about-text {
+    margin: 0 auto;
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.6;
+    color: var(--terracotta);
 }
 
 @media (max-width: 767px) and (min-resolution: 192dpi) {
@@ -62,28 +56,39 @@
 }
 
 @media screen and (min-width: 768px) {
+    .about-section {
+        margin-top: 16px;
+        padding: 80px 0;
+    }
+
+    .about-title-wrapper {
+        width: 670px;
+    }
+
+    .about-bee {
+        right: -36px;
+        bottom: 32px;
+        width: 120px;
+    }
+
     .about-title {
         background-image: url("/img/title/title-wood-desk-1x.png");
         font-size: 60px;
         width: 569px;
         height: 98px;
+        margin-bottom: 104px;
+    }
+
+    .about-text {
+        max-width: 1099px;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 1.9;
     }
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 192dpi){
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .about-title {
         background-image: url("/img/title/title-wood-desk-2x.png");
     }
 }
-
-.about-text {
-    max-width: 700px;
-    margin: 0 auto;
-
-    font-family: var(--font-primary);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 2.6;
-    color: var(--terracotta);
-}
-

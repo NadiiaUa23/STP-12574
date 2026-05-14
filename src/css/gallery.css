@@ -8,21 +8,16 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     width: 267px;
     height: 45px;
-
     margin: 0 auto 16px;
-
     font-family: var(--font-accent);
     font-size: 28px;
     color: var(--bg-color);
-
     background-image: url("/img/title/title-wood-mob-1x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
     text-shadow: 0 8px 4px var(--sky-blue);
 }
 
@@ -99,7 +94,7 @@
         width: 390px;
         height: 610px;
     }
-    
+
     .gallery-img {
         width: 375px;
         height: 598px;

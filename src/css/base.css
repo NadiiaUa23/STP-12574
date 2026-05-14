@@ -32,7 +32,6 @@ body {
   background-color: var(--bg-color);
 }
 
-
 .container {
   width: 100%;
   padding-left: 16px;
@@ -53,7 +52,6 @@ section {
 main {
   flex-grow: 1;
 }
-
 
 a,
 button {

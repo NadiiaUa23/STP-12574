@@ -1,76 +1,83 @@
-.hero-container {
-    min-height: 100vh;
-    background:
+.hero-section {
+    background-image:
         linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
-        url('/img/hero/hero-mobile-1x.png') center/cover no-repeat;
+        url('/img/hero/hero-mobile-1x.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 12px rgba(32, 22, 14, 0.7);
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 288px;
+    margin-top: 68px;
+}
+
+.hero-container {
+    background: none;
+}
+
+.hero-wrapper {
     display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
-    margin-bottom: 96px;
+    max-width: 328px;
 }
 
 .hero-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-family: "Modak", sans-serif;
+    font-family: var(--font-accent);
     font-weight: 400;
-    font-size: 34px;
-    text-align: center;
-    color: #fff;
-    -webkit-text-stroke: 1px var(--terracotta); 
-}
-
-.highlight {
-    font-family: "Modak", sans-serif;
-    font-weight: 400;
-    font-size: 80px;
-    text-align: center;
+    font-size: 38px;
     color: var(--gold-yellow);
     text-shadow: 0 8px 4px var(--raspberry-glaze);
+}
 
+.hero-subtitle {
+    font-family: var(--font-accent);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--terracotta);
 }
 
 .btn-text {
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-primary);
     font-weight: 800;
-    font-size: 32px;
+    font-size: 12px;
     text-align: center;
     color: #fff;
 }
 
 .btn-logo {
-    width: 32px;
+    width: 21px;
     height: auto;
 }
-        
+
 .hero-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
-
     width: 220px;
     height: 50px;
-
     background-image: url("/img/hero/button-mobile-1x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
     text-decoration: none;
-
 }
 
 @media (max-width: 767px) and (min-resolution: 192dpi) {
     .hero-btn {
         background-image: url("/img/hero/button-mobile-2x.png");
     }
-    .hero-container {
-        background:
+
+    .hero-section {
+        background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
             url('/img/hero/hero-mobile-2x.png') center/cover no-repeat;
     }
@@ -78,15 +85,42 @@
 
 @media screen and (min-width: 768px) {
     .hero-btn {
-        width: 519px;
-        height: 119px;
-
+        width: 520px;
+        height: 120px;
         background-image: url("/img/hero/button-desktop-1x.png");
     }
-    .hero-container {
-        background:
+
+    .hero-section {
+        background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
-            url('/img/hero/hero-desktop-1x.png') center/cover no-repeat;
+            url('/img/hero/hero-desktop-1x.png');
+        padding-top: 230px;
+        padding-bottom: 60px;
+        margin-top: 72px;
+    }
+
+    .hero-wrapper {
+        max-width: 656px;
+    }
+
+    .hero-container {
+        gap: 56px;
+    }
+
+    .hero-title {
+        font-size: 80px;
+    }
+
+    .hero-subtitle {
+        font-size: 32px;
+    }
+
+    .btn-text {
+        font-size: 32px;
+    }
+
+    .btn-logo {
+        width: 32px;
     }
 }
 
@@ -94,18 +128,20 @@
     .hero-btn {
         background-image: url("/img/hero/button-desktop-2x.png");
     }
-    .hero-container {
-        background:
+
+    .hero-section {
+        background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
             url('/img/hero/hero-desktop-2x.png') center/cover no-repeat;
     }
 }
 
 .hero-btn:hover {
-    filter: brightness(0.9);
+    filter: drop-shadow(0 4px 8px #569e16);
+    transform: scale(1.03);
 }
 
 .hero-btn:active {
-    filter: brightness(0.7);
+    background-image: url('/img/hero/btn-pressed-1x.png');
     transform: scale(0.97);
 }
