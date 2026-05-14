@@ -1,7 +1,7 @@
 .why-section {
     background-color: var(--bg-color);
     text-align: center;
-    padding-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .why-title {
@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 768px) {
     .why-section {
-        padding-bottom: 96px;
+        padding-bottom: 0;
     }
 
     .why-title {
