@@ -20,7 +20,8 @@
     line-height: 1;
     color: var(--bg-color);
     text-shadow: 0 8px 4px var(--sky-blue);
-    background-image: image-set(url(/STP-12574/img/title/title-wood-desk-1x.png) 1x, url(/STP-12574/img/title/title-wood-desk-2x.png) 2x);
+    background-image: image-set(url(/STP-12574/img/title/title-wood-desk-1x.png) 1x,
+            url(/STP-12574/img/title/title-wood-desk-2x.png) 2x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -116,7 +117,8 @@
         height: 45px;
         margin-bottom: 28px;
         font-size: 28px;
-        background-image: image-set(url(/STP-12574/img/title/title-wood-mob-1x.png) 1x, url(/STP-12574/img/title/title-wood-mob-2x.png) 2x);
+        background-image: image-set(url(/STP-12574/img/title/title-wood-mob-1x.png) 1x,
+                url(/STP-12574/img/title/title-wood-mob-2x.png) 2x);
 
     }
 
