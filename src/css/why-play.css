@@ -1,7 +1,7 @@
 .why-section {
     background-color: var(--bg-color);
     text-align: center;
-    margin-bottom: 16px;
+    padding: 80px 0;
 }
 
 .why-title {
@@ -67,15 +67,19 @@
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+
+    .why-section {
+
+        padding: 30px 0;
+    }
+
     .why-title {
         background-image: url("/img/title/title-wood-mob-2x.png");
     }
 }
 
 @media screen and (min-width: 768px) {
-    .why-section {
-        padding-bottom: 0;
-    }
+
 
     .why-title {
         background-image: url("/img/title/title-wood-desk-1x.png");
