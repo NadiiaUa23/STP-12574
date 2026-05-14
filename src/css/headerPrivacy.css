@@ -5,39 +5,16 @@
 }
 
 .back-link {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-
-    font-weight: 700;
     font-size: 20px;
-    color: #3f94ff;
-    text-decoration: none;
+    gap: 8px;
 }
 
-.back-link::before {
-    content: "‹";
-    font-size: 30px;
-    line-height: 1;
+.back-arrow {
+    width: 8px;
+    height: 14px;
 }
 
-.back-link:hover,
-.back-link:focus {
-    text-decoration: underline;
-}
-
-/* MOBILE */
-
-@media screen and (max-width: 767px) {
-    .header-secondary .header_wrapper {
-        padding: 24px 20px;
-    }
-
-    .back-link {
-        font-size: 18px;
-    }
-
-    .back-link::before {
-        font-size: 26px;
-    }
+.back-link:hover {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }

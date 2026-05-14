@@ -1,14 +1,3 @@
-// const openBtnEl = document.querySelector('[data-action="open"]');
-// const closeBtnEl = document.querySelector('[data-action="close"]');
-// const burgerMenuEl = document.querySelector('[data-visible]');
-
-// openBtnEl.addEventListener('click', e => {
-//   burgerMenuEl.dataset.visible = 'open';
-// });
-
-// closeBtnEl.addEventListener('click', e => {
-//   burgerMenuEl.dataset.visible = 'close';
-// });
 const openBtnEl = document.querySelector('[data-menu-open]');
 const burgerMenuEl = document.querySelector('[data-visible]');
 const menuLinks = document.querySelectorAll('.burger-menu_link');
