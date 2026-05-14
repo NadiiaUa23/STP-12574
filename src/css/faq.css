@@ -3,21 +3,24 @@
     background-color: var(--bg-color);
 }
 
-.section-title {
-    display: flex;
+
+.faq-title-wrapper {
+    text-align: center;
+}
+
+.faq-title {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 387px;
-    height: 140px;
-    margin: 0 auto 56px;
+    width: 569px;
+    height: 98px;
+    margin: 0 auto 136px;
     font-family: var(--font-accent);
     font-size: 60px;
     line-height: 1;
-    font-weight: 400;
     color: var(--bg-color);
-    text-shadow: 0 8px 0 var(--sky-blue);
-    background-image: image-set(url("/img/title/title-wood-desk-1x.png") 1x,
-            url("/img/title/title-wood-desk-2x.png") 2x);
+    text-shadow: 0 8px 4px var(--sky-blue);
+    background-image: image-set(url(/STP-12574/img/title/title-wood-desk-1x.png) 1x, url(/STP-12574/img/title/title-wood-desk-2x.png) 2x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -108,14 +111,13 @@
         padding: 30px 0;
     }
 
-    .section-title {
-        width: 165px;
-        height: 60px;
-        margin-bottom: 40px;
+    .faq-title {
+        width: 267px;
+        height: 45px;
+        margin-bottom: 28px;
         font-size: 28px;
-        text-shadow: 0 4px 0 var(--sky-blue);
-        background-image: image-set(url("/img/title/title-wood-mob-1x.png") 1x,
-                url("/img/title/title-wood-mob-2x.png") 2x);
+        background-image: image-set(url(/STP-12574/img/title/title-wood-mob-1x.png) 1x, url(/STP-12574/img/title/title-wood-mob-2x.png) 2x);
+
     }
 
     .faq-content {
@@ -136,6 +138,7 @@
     }
 
     .faq-question {
+
         font-size: 17px;
     }
 
