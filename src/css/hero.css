@@ -10,7 +10,7 @@
     padding-bottom: 288px;
     margin-bottom: 96px;
 }
-            
+
 .hero-container {
     background: none;
 }
@@ -55,21 +55,18 @@
     width: 21px;
     height: auto;
 }
-        
+
 .hero-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
-
     width: 220px;
     height: 50px;
-
     background-image: url("/img/hero/button-mobile-1x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   
     text-decoration: none;
 }
 
@@ -77,6 +74,7 @@
     .hero-btn {
         background-image: url("/img/hero/button-mobile-2x.png");
     }
+
     .hero-section {
         background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
@@ -88,9 +86,9 @@
     .hero-btn {
         width: 520px;
         height: 120px;
-
         background-image: url("/img/hero/button-desktop-1x.png");
     }
+
     .hero-section {
         background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
@@ -98,30 +96,37 @@
         padding-top: 230px;
         padding-bottom: 60px;
     }
+
     .hero-wrapper {
         max-width: 656px;
     }
+
     .hero-container {
         gap: 56px;
     }
+
     .hero-title {
         font-size: 80px;
     }
+
     .hero-subtitle {
         font-size: 32px;
-    } 
+    }
+
     .btn-text {
         font-size: 32px;
-    }    
+    }
+
     .btn-logo {
         width: 32px;
     }
-}         
+}
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .hero-btn {
         background-image: url("/img/hero/button-desktop-2x.png");
     }
+
     .hero-section {
         background-image:
             linear-gradient(rgba(32, 22, 14, 0.7), rgba(32, 22, 14, 0.7)),
@@ -135,6 +140,6 @@
 }
 
 .hero-btn:active {
-   background-image: url('/img/hero/btn-pressed-1x.png');
-   transform: scale(0.97);
+    background-image: url('/img/hero/btn-pressed-1x.png');
+    transform: scale(0.97);
 }
