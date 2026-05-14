@@ -1,8 +1,7 @@
 .gallery-section {
     background-color: var(--bg-color);
     text-align: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding: 80px 0;
 }
 
 .gallery-title {
@@ -72,11 +71,6 @@
     .gallery-section .container {
         padding-left: 0;
         padding-right: 0;
-    }
-    
-    .gallery-section {
-        margin-top: 96px;
-        margin-bottom: 96px;
     }
 
     .gallery-title {
