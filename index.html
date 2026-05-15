@@ -16,13 +16,13 @@
     rel="stylesheet" />
   <title>Bee Brilliant Blast</title>
   <script type="module" crossorigin src="/STP-12574/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/STP-12574/assets/burgerMenu-jbWgq1_-.js">
+  <link rel="modulepreload" crossorigin href="/STP-12574/assets/burgerMenu-BpN1wj-9.js">
   <link rel="modulepreload" crossorigin href="/STP-12574/assets/vendor-xQt5SzWC.js">
-  <link rel="stylesheet" crossorigin href="/STP-12574/assets/burgerMenu-DvNCjZX1.css">
+  <link rel="stylesheet" crossorigin href="/STP-12574/assets/burgerMenu-unPRZcT-.css">
   <link rel="stylesheet" crossorigin href="/STP-12574/assets/vendor-CtIR5pHR.css">
 </head>
 
-<body>
+<body data-scroll-lock="false">
   <header class="header">
   <div class="container">
     <div class="header_wrapper">
@@ -54,13 +54,13 @@
           </svg>
         </button>
 
-        <nav class="burger-menu" id="mobile-menu" data-visible="false" aria-label="Mobile navigation">
+        <nav class="burger-menu" id="mobile-menu" data-menu data-visible="false" aria-label="Mobile navigation">
           <ul class="burger-menu_list">
-            <li><a class="burger-menu_link" href="#about">About</a></li>
-            <li><a class="burger-menu_link" href="#gallery">Gallery</a></li>
-            <li><a class="burger-menu_link" href="#reviews">Reviews</a></li>
-            <li><a class="burger-menu_link" href="#faq">FAQ</a></li>
-            <li><a class="burger-menu_link" href="#contact">Contact</a></li>
+            <li><a class="burger-menu_link" data-menu-link href="#about">About</a></li>
+            <li><a class="burger-menu_link" data-menu-link href="#gallery">Gallery</a></li>
+            <li><a class="burger-menu_link" data-menu-link href="#reviews">Reviews</a></li>
+            <li><a class="burger-menu_link" data-menu-link href="#faq">FAQ</a></li>
+            <li><a class="burger-menu_link" data-menu-link href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -414,7 +414,7 @@
             <h2 class="reviews-title ">Reviews</h2>
 
             <ul class="reviews-list">
-                <li class="review-card">
+                <li class="review-card" data-review-card data-visible="true">
                     <p class="review-text">
                         This game's a blast! Super easy to pick up and I found myself playing way longer than I
                         planned.
@@ -429,7 +429,7 @@
                     </div>
                 </li>
 
-                <li class="review-card">
+                <li class="review-card" data-review-card data-visible="true">
                     <p class="review-text">Relaxing and colorful.</p>
 
                     <div class="review-author">
@@ -441,7 +441,7 @@
                     </div>
                 </li>
 
-                <li class="review-card">
+                <li class="review-card" data-review-card data-visible="true">
                     <p class="review-text">Love the tap mechanics.</p>
 
                     <div class="review-author">
@@ -453,7 +453,7 @@
                     </div>
                 </li>
 
-                <li class="review-card">
+                <li class="review-card" data-review-card data-visible="true">
                     <p class="review-text">Great casual game.</p>
 
                     <div class="review-author">
@@ -465,7 +465,7 @@
                     </div>
                 </li>
 
-                <li class="review-card" data-extra-review>
+                <li class="review-card" data-review-card data-visible="false">
                     <p class="review-text">
                         Great for when you've got 5 minutes to kill - whether you're waiting for coffee or riding
                         the bus.
@@ -505,10 +505,11 @@
 
             <!-- FAQ -->
             <ul class="faq-list">
-                <li class="faq-item is-open">
-                    <button class="faq-question" type="button">
+
+                <li class="faq-item" data-faq-item data-open="true">
+                    <button class="faq-question" data-faq-question type="button">
                         <span>Is it different from match-3?</span>
-                        <span class="faq-icon">−</span>
+                        <span class="faq-icon" data-faq-icon>−</span>
                     </button>
 
                     <div class="faq-answer">
@@ -516,10 +517,10 @@
                     </div>
                 </li>
 
-                <li class="faq-item">
-                    <button class="faq-question" type="button">
+                <li class="faq-item" data-faq-item data-open="false">
+                    <button class="faq-question" data-faq-question type="button">
                         <span>Is the game beginner-friendly?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" data-faq-icon>+</span>
                     </button>
 
                     <div class="faq-answer">
@@ -527,10 +528,10 @@
                     </div>
                 </li>
 
-                <li class="faq-item">
-                    <button class="faq-question" type="button">
+                <li class="faq-item" data-faq-item data-open="false">
+                    <button class="faq-question" data-faq-question type="button">
                         <span>Do levels get harder?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" data-faq-icon>+</span>
                     </button>
 
                     <div class="faq-answer">
@@ -541,10 +542,10 @@
                     </div>
                 </li>
 
-                <li class="faq-item">
-                    <button class="faq-question" type="button">
+                <li class="faq-item" data-faq-item data-open="false">
+                    <button class="faq-question" data-faq-question type="button">
                         <span>Are there boosters?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" data-faq-icon>+</span>
                     </button>
 
                     <div class="faq-answer">
@@ -552,16 +553,17 @@
                     </div>
                 </li>
 
-                <li class="faq-item">
-                    <button class="faq-question" type="button">
+                <li class="faq-item" data-faq-item data-open="false">
+                    <button class="faq-question" data-faq-question type="button">
                         <span>Can I play offline?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon" data-faq-icon>+</span>
                     </button>
 
                     <div class="faq-answer">
                         <p>Most levels can be played anytime.</p>
                     </div>
                 </li>
+
             </ul>
         </div>
     </div>
@@ -589,7 +591,7 @@
     </div>
 
     <p class="footer_copy">
-      © <span class="current-year"></span> silentpayload.pro All rights reserved
+      © <span data-current-year></span> silentpayload.pro All rights reserved
     </p>
   </div>
 </footer>
