@@ -3,28 +3,28 @@
     background-color: var(--bg-color);
 }
 
-/* FAQ TITLE */
 
-.section-title {
-    display: flex;
+.faq-title-wrapper {
+    text-align: center;
+}
+
+.faq-title {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 165px;
-    height: 60px;
-    margin: 0 auto 40px;
+    width: 569px;
+    height: 98px;
+    margin: 0 auto 136px;
     font-family: var(--font-accent);
-    font-weight: 400;
-    font-size: 28px;
+    font-size: 60px;
     line-height: 1;
     color: var(--bg-color);
-    text-shadow: 0 4px 0 var(--sky-blue);
-    background-image: url("/img/title/title-wood-mob-1x.png");
+    text-shadow: 0 8px 4px var(--sky-blue);
+    background-image: image-set(url(/STP-12574/img/title/title-wood-desk-1x.png) 1x, url(/STP-12574/img/title/title-wood-desk-2x.png) 2x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-
-/* FAQ LAYOUT */
 
 .faq-content {
     display: flex;
@@ -34,7 +34,15 @@
 }
 
 .faq-image-wrapper {
-    display: none;
+    width: 560px;
+    flex-shrink: 0;
+}
+
+.faq-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 80px;
 }
 
 .faq-list {
@@ -48,16 +56,12 @@
     list-style: none;
 }
 
-/* FAQ ITEM */
-
 .faq-item {
-    padding: 10px 14px 12px;
+    padding: 18px 28px 20px;
     background-color: #ffffff;
     border: 1px solid #d9b29b;
-    border-radius: 20px;
+    border-radius: 28px;
 }
-
-/*FAQ QUESTION*/
 
 .faq-question {
     display: flex;
@@ -66,25 +70,23 @@
     gap: 12px;
     width: 100%;
     padding: 0;
-    font-family: var(--font-primary);
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 1.2;
-    text-align: left;
-    color: var(--terracotta);
-    background: transparent;
+    background-color: transparent;
     border: none;
     cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: left;
+    color: var(--terracotta);
 }
 
 .faq-icon {
     flex-shrink: 0;
     font-size: 18px;
-    font-weight: 700;
     line-height: 1;
+    font-weight: 700;
 }
-
-/* FAQ ANSWER */
 
 .faq-answer {
     display: none;
@@ -93,9 +95,8 @@
 
 .faq-answer p {
     margin: 0;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.35;
-    text-align: left;
     color: #d2a272;
 }
 
@@ -103,56 +104,45 @@
     display: block;
 }
 
-/* DESKTOP */
+/* MOBILE  */
 
-@media screen and (min-width: 768px) {
-    .section-title {
-        width: 387px;
-        height: 140px;
-        margin-bottom: 56px;
-        font-size: 60px;
-        text-shadow: 0 8px 0 var(--sky-blue);
-        background-image: url("/img/title/title-wood-desk-1x.png");
+@media screen and (max-width: 767px) {
+    .faq-section {
+        padding: 30px 0;
+    }
+
+    .faq-title {
+        width: 267px;
+        height: 45px;
+        margin-bottom: 28px;
+        font-size: 28px;
+        background-image: image-set(url(/STP-12574/img/title/title-wood-mob-1x.png) 1x, url(/STP-12574/img/title/title-wood-mob-2x.png) 2x);
+
+    }
+
+    .faq-content {
+        justify-content: center;
     }
 
     .faq-image-wrapper {
-        display: block;
-        flex-shrink: 0;
-        width: 100%;
-        max-width: 560px;
+        display: none;
     }
 
-    .faq-image {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 80px;
+    .faq-list {
+        gap: 20px;
     }
 
     .faq-item {
-        padding: 18px 28px 20px;
-        border-radius: 28px;
+        padding: 10px 14px 12px;
+        border-radius: 20px;
     }
 
     .faq-question {
-        font-size: 20px;
+
+        font-size: 17px;
     }
 
     .faq-answer p {
-        font-size: 16px;
-    }
-}
-
-/*RETINA*/
-
-@media screen and (min-resolution: 192dpi) {
-    .section-title {
-        background-image: url("/img/title/title-wood-mob-2x.png");
-    }
-}
-
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .section-title {
-        background-image: url("/img/title/title-wood-desk-2x.png");
+        font-size: 12px;
     }
 }

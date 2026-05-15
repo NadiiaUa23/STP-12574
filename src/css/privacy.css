@@ -1,5 +1,5 @@
 .legal-page {
-    background: var(--bg-color, #fff3d7);
+    background-color: var(--bg-color, #fff3d7);
 }
 
 .legal-page main {
@@ -9,7 +9,6 @@
 .legal {
     padding: 170px 0;
 }
-
 
 .legal_container {
     max-width: 1240px;
@@ -26,8 +25,6 @@
     color: #111111;
 }
 
-
-
 .legal_content p {
     margin: 0;
     font-family: var(--font-primary);
@@ -38,8 +35,10 @@
 }
 
 .legal_content p+p {
-    margin: 8px 0 8px 0;
+    margin-top: 8px;
 }
+
+/*MOBILE */
 
 @media screen and (max-width: 767px) {
     .legal {
@@ -47,8 +46,7 @@
     }
 
     .legal_container {
-        margin: 0 auto;
-        padding: 0 40px;
+        padding: 0 24px;
     }
 
     .legal_title {
@@ -60,5 +58,4 @@
         font-size: 16px;
         line-height: 1.5;
     }
-
 }
