@@ -136,8 +136,7 @@
 @media screen and (max-width: 767px) {
   .header_wrapper {
     min-height: 44px;
-
-    padding: 24px 20px;
+    padding: 10px 20px;
   }
 
   .nav {

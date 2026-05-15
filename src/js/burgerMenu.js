@@ -1,17 +1,17 @@
 const openBtnEl = document.querySelector('[data-menu-open]');
-const burgerMenuEl = document.querySelector('[data-visible]');
-const menuLinks = document.querySelectorAll('.burger-menu_link');
+const burgerMenuEl = document.querySelector('[data-menu]');
+const menuLinks = document.querySelectorAll('[data-menu-link]');
 
 const openMenu = () => {
   burgerMenuEl.dataset.visible = 'true';
   openBtnEl.setAttribute('aria-expanded', 'true');
-  document.body.classList.add('body-no-scroll');
+  document.body.dataset.scrollLock = 'true';
 };
 
 const closeMenu = () => {
   burgerMenuEl.dataset.visible = 'false';
   openBtnEl.setAttribute('aria-expanded', 'false');
-  document.body.classList.remove('body-no-scroll');
+  document.body.dataset.scrollLock = 'false';
 };
 
 const toggleMenu = () => {
