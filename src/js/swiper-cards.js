@@ -17,7 +17,7 @@ const swiperConfigs = {
   },
 };
 
-const selectors = ['.how-swiper', '.gallery-swiper'];
+const selectors = ['#how-swiper', '#gallery-swiper'];
 
 selectors.forEach(selector => {
   new Swiper(selector, swiperConfigs);
