@@ -42,12 +42,8 @@
     box-shadow: 0 0 10px 0 #e53c7d;
 }
 
-.review-card:nth-child(n + 5):not(.review-card--visible) {
+.review-card[data-visible='false'] {
     display: none;
-}
-
-.review-card--visible {
-    display: block;
 }
 
 .review-text {
@@ -110,11 +106,11 @@
     cursor: pointer;
 }
 
-.reviews-more-btn.is-hidden {
+.reviews-more-btn[data-hidden='true'] {
     display: none;
 }
 
-/*MOBILE*/
+/* MOBILE */
 
 @media screen and (max-width: 767px) {
     .reviews-section {

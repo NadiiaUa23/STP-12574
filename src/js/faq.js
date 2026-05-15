@@ -1,19 +1,20 @@
-const faqItems = document.querySelectorAll('.faq-item');
+const faqItems = document.querySelectorAll('[data-faq-item]');
 
 faqItems.forEach(item => {
-  const button = item.querySelector('.faq-question');
-  const icon = item.querySelector('.faq-icon');
+  const button = item.querySelector('[data-faq-question]');
+  const icon = item.querySelector('[data-faq-icon]');
 
   button.addEventListener('click', () => {
-    const isOpen = item.classList.contains('is-open');
+    const isOpen = item.dataset.open === 'true';
 
     faqItems.forEach(currentItem => {
-      currentItem.classList.remove('is-open');
-      currentItem.querySelector('.faq-icon').textContent = '+';
+      currentItem.dataset.open = 'false';
+
+      currentItem.querySelector('[data-faq-icon]').textContent = '+';
     });
 
     if (!isOpen) {
-      item.classList.add('is-open');
+      item.dataset.open = 'true';
       icon.textContent = '−';
     }
   });

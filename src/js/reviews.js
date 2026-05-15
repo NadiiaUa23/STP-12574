@@ -1,12 +1,12 @@
 const reviewsMoreBtn = document.querySelector('[data-reviews-more]');
-const reviewCards = document.querySelectorAll('.review-card');
+const reviewCards = document.querySelectorAll('[data-review-card]');
 
 if (reviewsMoreBtn) {
   reviewsMoreBtn.addEventListener('click', () => {
     reviewCards.forEach(card => {
-      card.classList.add('review-card--visible');
+      card.dataset.visible = 'true';
     });
 
-    reviewsMoreBtn.classList.add('is-hidden');
+    reviewsMoreBtn.dataset.hidden = 'true';
   });
 }
